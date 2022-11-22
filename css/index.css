@@ -1,0 +1,443 @@
+* {
+  -webkit-tap-highlight-color: transparent; /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+  text-shadow: none !important;
+}
+
+body {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-user-select: none; /* prevent copy paste, to allow, change "none" to "text" */
+  font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI",
+    "Roboto", sans-serif;
+  font-size: 12px;
+  height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  /* Padding to avoid the "unsafe" areas behind notches in the screen */
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-left, 0px)
+    env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px);
+}
+
+.warning {
+  text-align: center;
+  color: #06c2f1;
+}
+
+.ui-page {
+  background-color: white;
+}
+
+.ui-page .ui-header,
+.ui-page .ui-footer .ui-navbar ul li a {
+  width: 100%;
+  height: 50px;
+  color: #06c2f1;
+  background-color: #06c2f1;
+  border: 1px ridge #e4e4e4;
+
+}
+
+#abc{
+  height: 50px;
+}
+.active,
+.ui-select .ui-btn:hover {
+  background-color: #76dcf5 !important;
+  color: white !important;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+input {
+  height: 35px;
+}
+
+.ui-input-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  border: none;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid #06c2f1 !important;
+}
+
+.ui-input-text .ui-icon-delete::after {
+  background-color: #06c2f1;
+}
+
+.ui-select .ui-btn {
+  border: 1px solid white;
+  box-shadow: none;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  background: #06c2f1;
+  color: white;
+  font-weight: normal;
+}
+
+.ui-select .ui-icon-carat-d::after {
+  background-color: transparent;
+}
+
+.ui-focus {
+  box-shadow: 0px 0px 5px 0px #06c2f1 !important;
+  -moz-box-shadow: 0px 0px 5px 0px #06c2f1!important;
+  -webkit-box-shadow: 0px 0px 5px 0px #06c2f1 !important;
+}
+
+.small-text {
+  color: #06c2f1;
+  font-size: 12px !important;
+  margin-top: 20px !important;
+}
+
+.green {
+  background-color: #06c2f1!important;
+  color: white !important;
+  font-weight: normal !important;
+}
+
+.red {
+  background-color: red !important;
+  color: white !important;
+  font-weight: normal !important;
+}
+
+#frm-confirm table {
+  margin: 5px;
+}
+
+#frm-confirm th,
+#frm-confirm td {
+  border-radius: 5px;
+  border: 1px solid #4F9068;
+  padding: 10px;
+  height: 25px;
+}
+
+#frm-confirm th {
+  background-color: #4F9068;
+  color: white;
+  font-weight: normal;
+  white-space: nowrap;
+}
+
+#detail th,
+#detail td {
+  padding: 5px 10px;
+}
+
+#menu-right {
+  float: right;
+  margin-right: 0.5em;
+}
+
+.transparent {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+#page-list #btn-filter-popup {
+  background-color: #4F9068 !important;
+  color: white !important;
+  font-weight: normal !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: none !important;
+  width: 40px !important;
+  height: 37px;
+  margin-bottom: 8px;
+  background-image: url("../img/icon-filter.png");
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#page-list #btn-reset {
+  background-color: #06c2f1 !important;
+  color: white !important;
+  font-weight: normal !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+  border: none !important;
+  height: 37px;
+  margin-bottom: 8px;
+}
+
+#page-detail .btn-option {
+  border: none !important;
+  background-color: transparent !important;
+  background-image: url("../img/icon-three-dots.png");
+  background-size: 5px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.shortcut {
+  text-align: center;
+  padding-bottom:2px ;
+  width: 50%;
+  float: left;
+} 
+
+
+#select-item{
+  line-height: 80px;
+}
+.shortcut .shortcut-item:hover {
+  background-color: rgb(217, 244, 255);
+  border: 1px solid  rgb(172, 169, 169);
+  
+}
+.shortcut .shortcut-item {
+  border: 1px ridge #e4e4e4;
+  height: 80px;
+  background-color: #ffffff;
+  text-align: center;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+a{
+  text-decoration: none
+}
+
+#page-detail #frm-add-expense .ui-btn,
+#page-detail #frm-update-expense .ui-btn {
+  border: none;
+  margin: 0;
+}
+
+.avatar {
+  border: 1px solid #4F9068;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+}
+
+.end-list {
+  text-align: center;
+  color: gray;
+  font-size: 11px;
+}
+
+.list {
+  border-top: 1px solid #4F9068;
+  padding: 5px 0px;
+  box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  -webkit-box-shadow: none !important;
+}
+
+.list th {
+  padding-right: 5px;
+}
+
+.list-date {
+  text-align: center;
+  height: 25px;
+  background-color: #4F9068;
+  color: white;
+  line-height: 25px;
+}
+
+#page-detail #expense #message {
+  border: 1px solid #4F9068;
+  border-radius: 5px;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+.home-intro{
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+#intro-item{
+  display: inline-block;
+  width: 100%;
+  font-size: 25px;
+  font-family: system-ui, -apple-system, -apple-system-font, "Segoe UI",
+  "Roboto", sans-serif;
+}
+
+.home-intro h1{
+  float:left;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+#intro-content-left
+{
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+#intro-content-right
+{
+  width: 100%;
+  display: inline-block;
+  position: relative;
+}
+
+
+.home-intro{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  
+}
+
+.paper{
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+.paper-content{
+  margin-top: 1%;
+  display: inline-block;
+  padding: 1%;
+  width: 50%;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.paper p{
+ text-align: left;
+}
+.paper h1{
+  color: #4a4a4a;
+ }
+@media only screen and (min-width: 600px) {
+  .intro{
+    float: left;
+    text-align: center;
+  }
+  .text-intro{
+    text-align: center;
+  }
+  body{
+    font-size: large;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .intro-content-right a
+  {
+    display: inline-block;
+    width: 90%;
+  }
+  .intro-content-left a
+  {
+    display: inline-block;
+    width: 100%;
+  }
+
+  .paper-content{
+    width: 80%;
+  }
+}
+
+#app-name{
+  font-family: 'Lobster', cursive;
+  font-size: 30px;
+}
+
+
